@@ -21,6 +21,7 @@ jobs:
     steps:
 #    - uses: echo "the job was triggered by ${{ github.event_name }}"
     - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+    - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
     - uses: actions/checkout@v3
     - name: Set up JDK 17
       uses: actions/setup-java@v3
