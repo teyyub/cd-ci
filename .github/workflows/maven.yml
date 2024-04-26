@@ -11,7 +11,7 @@ run-name: ${{github.actor}} is testing github actions
 on:
   push:
     branches: [ "main" ]
-  pull_request:
+  pull_request1:
     branches: [ "main" ]
 
 jobs:
