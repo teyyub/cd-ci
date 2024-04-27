@@ -20,6 +20,10 @@ jobs:
     steps:
       - run: echo "salam"
       - run: echo "2+2" | bc
+  mu_second_job:
+     steps:
+       - name: docker
+       - uses: docker://alpine:3.8
   build:
     runs-on: ubuntu-latest
     steps:
