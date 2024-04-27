@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "salam"
-      - run: echo $((2 + 2))
+      - run: echo "2+2" | bc
   build:
     runs-on: ubuntu-latest
     steps:
