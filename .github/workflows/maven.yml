@@ -7,7 +7,7 @@
 # documentation.
 
 name: Java CI with Maven
-run-name: ${{github.actor}} is testing github actions
+#run-name: ${{github.actor}} is testing github actions
 on:
   push:
     branches: [ "main" ]
