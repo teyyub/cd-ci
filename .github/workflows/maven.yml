@@ -18,7 +18,7 @@ jobs:
   my_first_job:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "salam"
+      - run: echo "salam"
   build:
     runs-on: ubuntu-latest
     steps:
