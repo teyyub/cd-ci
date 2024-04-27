@@ -20,9 +20,9 @@ jobs:
     steps:
       - run: echo "salam"
       - run: echo "2+2" | bc
-  mu_second_job:
-      runs-on: ubuntu-latest
-      steps:
+  my_second_job:
+    runs-on: ubuntu-latest
+    steps:
        - name: connect postgresql
          run: node client.js
          env:
