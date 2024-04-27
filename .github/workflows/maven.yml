@@ -46,3 +46,4 @@ jobs:
         path: staging
     - name: Build with Maven
       run: mvn install
+#test
