@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "salam"
-      - run: echo $expr(2 + 2)
+      - run: echo $(2 + 2)
   build:
     runs-on: ubuntu-latest
     steps:
