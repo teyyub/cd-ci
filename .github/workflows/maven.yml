@@ -13,44 +13,11 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
-#  my_first_job:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - run: echo "salam"
-#      - run: echo "2+2" | bc
-#  my_second_job:
-#    runs-on: ubuntu-latest
-#    steps:
-#       - name: connect postgresql
-#         run: node client.js
-#         env:
-#           POSTGRES_HOST:postgres
-#           POSTGRES_PORT:5432
   build:
     runs-on: ubuntu-latest
     steps:
 #    - uses: echo "the job was triggered by ${{ github.event_name }}"
     - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
     - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-    - uses: actions/checkout@v4
-    - name: Set up JDK 17
-    - uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
-    - run: mvn --batch-mode --update-snapshots verify
-    - run: mkdir staging && cp target/*.jar staging
-    - uses: actions/upload-artifact@v4
-      with:
-        name: Package
-        path: staging
-    - name: Build with Maven
-    - run: mvn install
-#      run: mvn -B package --file pom.xml
 
-    # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
-#    - name: Update dependency graph
-#      uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
