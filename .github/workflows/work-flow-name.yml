@@ -1,5 +1,6 @@
 name: "workflow name testing"
 run-name: "test"
-on: push
+on:
+  push:
 jobs:
-  runs-on:ubuntu-latest
+  runs-on: ubuntu-latest
