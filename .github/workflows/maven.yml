@@ -20,7 +20,7 @@ jobs:
     steps:
       - run: echo "salam"
       - run: echo "2+2" | bc
-      - run: echo "${{ env.Greeting }}"
+      - run: echo "${{ env.GREETING }}"
 #  build:
 #    runs-on: ubuntu-latest
 #    steps:
